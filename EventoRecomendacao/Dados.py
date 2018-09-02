@@ -129,6 +129,13 @@ def addInDataBase():
     env = db.eventos
     env.insert_one(eventos)
 
+def addEvento(key,evento):
+    con = MongoClient('localhost', 27017)
+    db = con['DadosEventos']
+    env = db.eventos.find_one({}) or {}
+    env[key] = evento[key]
+    db.eventos.find_one_and_update({},{"$set":env})
+
 def getEventosFromDatabase():
     con = MongoClient('localhost',27017)
     db = con.DadosEventos
