@@ -28,4 +28,7 @@ def getRecomendacoesEventos(usuario):
     eventos = [e for e in eventos if not e in usuarios[usuario] or usuarios[usuario][e] < 2]
     return eventos
 
-
+def getRecomendacoesAllUsuarios():
+    usuarios = list( getVisitas().keys())
+    recomendacoesUsuario = ([ {"guid":  item,"eventos" :  getRecomendacoesEventos(item)} for item in usuarios])
+    return recomendacoesUsuario

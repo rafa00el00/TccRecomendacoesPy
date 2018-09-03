@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
 app = Flask(__name__)
 
-from RecomendacaoUsuario import getRecomendacoesSimilares,getRecomendacoesEventos
+from RecomendacaoUsuario import getRecomendacoesSimilares,getRecomendacoesEventos,getRecomendacoesAllUsuarios
 from UsuarioNegocio import AddVisita
 
 
@@ -29,3 +29,7 @@ def post_addMovimentacaco():
     }
     retorno = AddVisita(teste) 
     return "Adicionada" ,200
+
+@app.route('/GetAllRecomendacoes',methods=['GET'])
+def GetAllrecomendacoes():
+    return jsonify(getRecomendacoesAllUsuarios()),200
