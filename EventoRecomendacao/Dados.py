@@ -179,5 +179,6 @@ def makeRecomendacoesSimilares():
     con = MongoClient('localhost', 27017)
     db = con['RecomendacoesEventos']
     env = db.eventos
+    env.delete_many({})
     env.insert_many(recomendacoes)
     return recomendacoes
