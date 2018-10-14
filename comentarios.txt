@@ -1,0 +1,13 @@
+__label__3 Esse restaurande é incrivel!
+__label__1 Esse restaurante é horrivel :'(
+__label__2 Esse Restaurante é rasoavel
+__label__3 super recomendo, comida maravilhosa
+__label__3 comida gostosa e caseira
+__label__3 evento super atravivo e bem organizado
+__label__1 mal organizado, e pessimo atendimento
+__label__2 esperava mais, porém não foi te todo ruim, atendimento excelente e as pessoas são muito legais 
+__label__1 não vale a pena é pessimo, e alem disso é muito caro, as pessoas não se dão ao trabaljo de te atender e você chama o atendente e ele não te da atenção
+__label__3 parece a disney de osasco, nunca fui em um parque tão bom e parece que estou em outro pais, por mais lugares como esse eu voto sim 
+__label__3 Estou já recomendando para todos os meus amigos nunca vi um lugar tão agradavel.
+__label__1 estava todo cheo de lama. não dava nem para andar direto parecia o pantanal 
+__label__2 muito quente o amviente eu preferia estar vendo o filme do pele 

@@ -1,3 +1,7 @@
+# encoding=utf8
+# import sys
+# reload(sys)
+# sys.setdefaultencoding('utf8')
 from math import sqrt
 from pymongo import MongoClient
 import datetime

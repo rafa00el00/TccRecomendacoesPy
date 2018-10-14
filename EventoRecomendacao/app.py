@@ -1,3 +1,7 @@
+# encoding=utf8
+# import sys
+# reload(sys)
+# sys.setdefaultencoding('utf8')
 from flask import Flask, jsonify, request
 app = Flask(__name__)
 
@@ -17,9 +21,9 @@ def post_similaresCodEvento():
     if not request.json:
         abort(400)
     teste = {
-        '9999':request.json['evento']
+        '9999':dict([ (e,1) for e in request.json['evento']])
     }
-    return jsonify([e[1] for e in getSimilares(teste) if e[0] >0.3 ]),200
+    return jsonify([e[1] for e in getSimilares(teste) if e[0] >0.1 ]),200
 
 
 @app.route('/Evento',methods=['POST'])
